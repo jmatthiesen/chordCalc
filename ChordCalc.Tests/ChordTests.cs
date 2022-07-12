@@ -1,8 +1,9 @@
 ﻿using Xunit;
+using ChordCalc.Backend;
 
 namespace ChordCalc.Tests;
 
-public class UnitTest1
+public class ChordTests
 {
     [Fact]
     public void GetDMajorChord()

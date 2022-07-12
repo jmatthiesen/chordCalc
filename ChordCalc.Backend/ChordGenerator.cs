@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace ChordCalc.Tests
+namespace ChordCalc.Backend
 {
-    internal class ChordGenerator
+    public class ChordGenerator
     {
         static string[] notes = {"A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#"};
 
-        internal static string[] GetMajorChord(string chordName)
+        public static string[] GetMajorChord(string chordName)
         {
             // TODO: Chord parsing needs to understand not just simple note names, but things like Dmaj7, Dsus2, etc.
 
