@@ -9,7 +9,6 @@
 
 // G Min: G, A, Bb, C, D, Eb, F, G
 
-// See https://aka.ms/new-console-template for more information
 // TODO: Ask for the key
 // TODO: Ask for Major or Minor key
 // TODO: Ask for chord
