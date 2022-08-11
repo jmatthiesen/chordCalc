@@ -2,11 +2,20 @@
 
 namespace ChordCalc.Backend
 {
+    // Notes:
+    // Key: A:
+    // Major intervalic formula: WWHWWWH
+    // Minor intervalic formula: WHWWHWW
+    // 
+    // A, B, C#, D, E, F#, G#, A
+    // 1, 2, 3, 4, 5, 6, 7, octave'
+
     public class ChordGenerator
     {
-        static string[] notes = {"A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#"};
+        // TODO: Support flats
+        static string[] notes = { "A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#" };
 
-        public static string[] GetMajorChord(string chordName)
+        public static string[] GetMajorChord(string? chordName)
         {
             // TODO: Chord parsing needs to understand not just simple note names, but things like Dmaj7, Dsus2, etc.
 
@@ -17,6 +26,7 @@ namespace ChordCalc.Backend
                 throw new Exception("Unexpected chord name");
             }
 
+            // Hardcoded major scale for now
             int scaleNote2 = GetNote(root + 2); // W
             int scaleNote3 = GetNote(scaleNote2 + 2); // W
             int scaleNote4 = GetNote(scaleNote3 + 1); // H

@@ -1,20 +1,14 @@
-﻿// A, A#, B, C, C#, D, D#, E, F, F#, G, G#
-//
-// Key: A:
-// Major intervalic formula: WWHWWWH
-// Minor intervalic formula: WHWWHWW
-// 
-// A, B, C#, D, E, F#, G#, A
-// 1, 2, 3, 4, 5, 6, 7, octave'
-
-// G Min: G, A, Bb, C, D, Eb, F, G
-
-// TODO: Ask for the key
+﻿// TODO: Ask for the key
 // TODO: Ask for Major or Minor key
 // TODO: Ask for chord
 // TODO: Output the chord
 
-var key = "cmaj";
+using ChordCalc.Backend;
 
-Console.WriteLine("Hello, World!");
+Console.WriteLine("Chord name?");
 
+var chordName = Console.ReadLine();
+var chordNotes = ChordGenerator.GetMajorChord(chordName);
+Console.WriteLine(String.Join(", ", chordNotes));
+
+Console.ReadKey();

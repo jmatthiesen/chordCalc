@@ -16,7 +16,6 @@ public class ChordTests
         string[] expectedChord = new[] { "D", "F#", "A" };
         string[] actualChord = ChordGenerator.GetMajorChord(chordName);
 
-
         Assert.Equal(expectedChord, actualChord);
     }
 
